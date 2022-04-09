@@ -1,8 +1,7 @@
+
 package com.demo;
 import java.util.Scanner;
-
 import org.apache.commons.lang3.StringUtils;
-
 public class Dependices_info {
 static public void alpha() {
 		int a = 3095;
@@ -24,5 +23,4 @@ String g= sc.nextLine();
 
 		System.out.println("first time  " + str);
 	}
-
 }
