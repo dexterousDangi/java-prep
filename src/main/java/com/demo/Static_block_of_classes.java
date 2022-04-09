@@ -1,5 +1,5 @@
 package com.demo;
-F
+
 public class Static_block_of_classes {
 
 	static {
