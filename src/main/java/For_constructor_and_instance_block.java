@@ -35,7 +35,10 @@ public class For_constructor_and_instance_block {
 
 }
 /*
- * output: this is instance block 1
+ * output:
+ *  static block 1 
+ *  main method
+ *  this is instance block 1
  *  this is second instance block 
  *  this is zero argument constructor
  *  this is one argument constructro2 
