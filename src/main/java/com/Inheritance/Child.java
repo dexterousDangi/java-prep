@@ -7,6 +7,12 @@ public class Child extends Parent {
 		super();
 		}
 */	
+	static {
+		System.out.println("child class static block");
+	}
+	{
+		System.out.println("child class instance block");
+	}
 	public static void main(String[] args) {
 
 		new Child();
@@ -15,6 +21,10 @@ public class Child extends Parent {
 }
 
 /*output:
+parent class static block
+child class static block
+parent class instance block
 parent class constructor
 constructor executed without using super() keyword by user
+child class instance block
 */
