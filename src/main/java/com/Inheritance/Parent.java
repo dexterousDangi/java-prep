@@ -12,6 +12,7 @@ public class Parent {
 //static block
 	static {
 		System.out.println("parent class static block");
+			
 	}
 
 }

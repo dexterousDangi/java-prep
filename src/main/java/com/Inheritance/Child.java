@@ -14,7 +14,7 @@ public class Child extends Parent {
 		System.out.println("child class instance block");
 	}
 	public static void main(String[] args) {
-
+System.out.println("main method of child class");
 		new Child();
 	}
 
