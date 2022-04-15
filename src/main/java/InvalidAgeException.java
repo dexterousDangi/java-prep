@@ -27,7 +27,7 @@ class Using_checked_exception {
 		int diff=0;
 		diff = 18 - no;
 		if (no<18) {
-			System.out.println("Not a valid age for age, wait for " + diff + "years");
+			System.out.println("Not a valid age for Marriage, wait for " + diff + "years");
 			throw new InvalidAgeException("enter age is below 18 yr");
 			
 		} else {
