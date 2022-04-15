@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class OverWeightException extends Exception
 {  
 	// by extending Exception class it also became a exception class
-	// only JVM know about this exception not the compliler	
+	// only JVM know about this exception not the complier	
 OverWeightException(){}
 }
 
