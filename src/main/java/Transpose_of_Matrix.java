@@ -8,7 +8,7 @@ public class Transpose_of_Matrix {
 		int column = matrix.length;
 
 		System.out.println("no of columns " + column);
-		
+
 		System.out.println("given matrix :");
 		for (int[] mat : matrix) { // will give us row
 			for (int matr : mat) { // will provide corresponding column of the array
@@ -30,7 +30,8 @@ public class Transpose_of_Matrix {
 		for (int[] trans : transpose) {
 			for (int transpos : trans) {
 				System.out.format("%- 3d", transpos);
-			}System.out.println();
-	}
+			}
+			System.out.println();
 		}
+	}
 }
