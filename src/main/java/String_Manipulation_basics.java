@@ -13,7 +13,7 @@ public class String_Manipulation_basics {
 		System.out.println(dd == ddd);    //false
 		System.out.println(str == ddd);   //false
 		System.out.println(dd == str);       //true
-		System.out.println(dd.equals(str));   // true
+		System.out.println(dd.equals(str));   // true   // only string class equals method perform content comparison other class equals () method perform reference comparison only.
 		System.out.println(dd.equals(ddd));     //true
 		System.out.println(ddd3.equals(ddd));   // true
 		System.out.println(dd.compareTo(ddd));
