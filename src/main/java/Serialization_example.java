@@ -14,6 +14,7 @@ public class Serialization_example {
 				new FileOutputStream("F:\\eclipse workspace\\java-prep\\src\\main\\java\\Serialization.txt"));  // <---- where to write/store the object
 																											    // serialization.txt contains object in binary format.
 		oos.writeObject(emp);
+		//ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("F:\\eclipse workspace\\java-prep\\src\\main\\java\\Serialization.txt")).writeObject(new Employee(112,"dangi");); is also valid line of code.
 		oos.close();
 		System.out.println("SERIALIZATION COMPLETED");
 		}
@@ -26,6 +27,6 @@ class Employee implements Serializable {
 	Employee (int eid, String ename) {
 		this.eid=eid;
 		this.ename=ename;
-		
-	}
+		}
+
 }
