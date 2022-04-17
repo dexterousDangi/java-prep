@@ -1,0 +1,3 @@
+using character oriented channel
+to read and write the data 
+operations done by pardeep dangis
