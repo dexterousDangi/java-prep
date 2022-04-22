@@ -19,8 +19,9 @@ public class Multithreading_Daemon_thread {
 }
 class Daemon_thread extends Thread{
 	public void run() { 
+		Thread.currentThread().setName("daemon thread");
 		for(int i=1; i<=10; i++) {
-			System.out.println(Thread.currentThread().getName()+" "+Thread.currentThread().isDaemon());
+			System.out.println(Thread.currentThread().getName()+" <-- is a daemon thread :"+Thread.currentThread().isDaemon());
 			
 		}
 	}
