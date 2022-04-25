@@ -27,7 +27,22 @@ public class JC2CO {
 		}System.out.println("all odd elements coverted into even :" + Arrays.toString(arr3));
 		System.out.println();
 		
-		
+		// problem 4
+		int [] arr4= {10,28,1,15,-3,3};
+		int temp1=arr4[0],temp2=arr4[0], max=0, min=0;
+		System.out.println(Arrays.toString(arr4));
+		for(int i=1;i<arr4.length; i++) {
+			max=arr4[i];
+			if(temp1<max) {
+				temp1=max;
+			}
+			min=arr4[i];
+			if(temp2>min) {
+				temp2=min;
+			}
+				
+			}System.out.println("largest element in the array :"+temp1);
+			System.out.println("smallest element in the array :"+temp2);
 		
 		
 		
