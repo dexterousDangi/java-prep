@@ -16,6 +16,7 @@ public class Thread_using_Runnable {
 	}
 
 }
+
 class Thread111 extends com.Inheritance.Parent implements Runnable{
 	@Override
 	public void run() {
