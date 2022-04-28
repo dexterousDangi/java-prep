@@ -8,7 +8,19 @@ interface Gear {
 public class Anonymous_inner_class {
 static int speed1=10;
 static int speed2=30;
+Gear gg=new Gear() {
 
+	@Override
+	public void first() {
+		System.out.println("for electric vehical:" +Anonymous_inner_class.speed1);
+	}
+
+	@Override
+	public void Second() {
+		System.out.println("for electric vehical :"+Anonymous_inner_class.speed2);
+	}
+	
+};
 	public static void main(String[] args) {
 	Gear g = new Gear() {
 
@@ -22,8 +34,13 @@ static int speed2=30;
 			
 		};
 		
-		g.first();
+		g.first();     // when anonymous class declared inside the main method
 		g.Second();
+		
+		Anonymous_inner_class aa=new Anonymous_inner_class();
+		
+		aa.gg.first();   // when anonymous class decalred in instance area this is how we call the class 
+		aa.gg.Second();
 }
 
 }
