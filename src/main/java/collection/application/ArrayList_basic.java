@@ -82,6 +82,11 @@ class Hostal {
 		this.hno = hno;
 		this.hname = hname;
 	}
+	public String toString () {
+		return hno+ " " +hname;
+	}
+
+
 }
 
 class Stand {
