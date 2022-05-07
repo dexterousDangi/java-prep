@@ -63,33 +63,29 @@ public class J5C2 {
 			System.out.println(ne);
 		}
 	}
-	
+
 	public void numberSerise(int a) {
-		System.out.println("printing counting till :"+a);
-		String alpha="";
-		for(int i=1;i<=a;i++)
-			alpha=alpha+i;
+		System.out.println("printing counting till :" + a);
+		String alpha = "";
+		for (int i = 1; i <= a; i++)
+			alpha = alpha + i;
 		System.out.println(alpha);
 	}
-	
-	public void seriesArray(int []a) {
-		System.out.println("given array :"+Arrays.toString(a));
-		String [] serise=new String [a.length];
-		String arr="";
-		for(int i=0; i<a.length;i++) {
-				int at=a[i];
-				arr="";
-				for(int j=1;j<=at;j++) {
-					arr=arr+j;
-				}
-				serise[i]=arr;
+
+	public void seriesArray(int[] a) {
+		System.out.println("given array :" + Arrays.toString(a));
+		String[] serise = new String[a.length];
+		String arr = "";
+		for (int i = 0; i < a.length; i++) {
+			int at = a[i];
+			arr = "";
+			for (int j = 1; j <= at; j++) {
+				arr = arr + j;
+			}
+			serise[i] = arr;
 		}
 		System.out.println(Arrays.toString(serise));
 	}
-	
-	
-	
-	
 
 	public static void main(String[] args) {
 		J5C2 check = new J5C2();
@@ -102,7 +98,7 @@ public class J5C2 {
 		check.print2(st);
 		check.numberSerise(2);
 		check.numberSerise(5);
-		int [] ab= {1,4,2};
+		int[] ab = { 1, 4, 2 };
 		check.seriesArray(ab);
 	}
 
