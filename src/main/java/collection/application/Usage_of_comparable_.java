@@ -9,7 +9,7 @@ import java.util.LinkedList;
 
 // but in case of user defined class objects we have to implement the comparable interface and override the compareTo() method.
  
-// there is also a disadvantage of comparable interface is that we have to write the sorting logics with the busniess logics
+// there is also a disadvantage of comparable interface is that we have to write the sorting logics with the business logics
 public class Usage_of_comparable_ {
 
 	public static void main(String[] args) {
@@ -72,3 +72,9 @@ class Club implements Comparable<Club> {    // sorting integer data
 	}
 
 }
+//using comparable we are only able to perform sorting of only one type of data 
+// and we are mixing business logics with sorting logics 
+
+// to overcome these disadvantages we use comparator interface
+// which provide customized sorting 
+// we are writing  seperately the business logics and sorting logics.
