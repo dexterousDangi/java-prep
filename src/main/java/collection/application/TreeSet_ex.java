@@ -26,6 +26,17 @@ public class TreeSet_ex {
         for(Empl e:salComp){
             System.out.println(e);
         }
+        System.out.println("=========================== head set:");
+       TreeSet<Empl> tt= (TreeSet<Empl>) salComp.headSet(new Empl("Ram",3000));
+       for(Empl ee:tt){
+           System.out.println(ee);
+       }
+       System.out.println("===========================Tailset:     ");
+       TreeSet<Empl> t= (TreeSet<Empl>) salComp.tailSet(new Empl("Ram",3000));
+       for(Empl e:t){
+           System.out.println(e);
+       }
+       
     }
 }
  
