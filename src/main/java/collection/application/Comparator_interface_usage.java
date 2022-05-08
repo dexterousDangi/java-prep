@@ -19,7 +19,6 @@ public class Comparator_interface_usage {
 		System.out.println("sorting is done on the bases of height in cms");
 		for (Player p : lk)
 			System.out.println(p.height + " -- " + p.name);
-		
 		Collections.sort(lk, new NameComp());
 		System.out.println("sorting is done on the bases of String data:");
 		for (Player k : lk)
@@ -51,15 +50,6 @@ class HeightComp implements Comparator<Player> {
 			return 1;
 		else
 			return -1;
-	}
-
-}
-
-class NameComp implements Comparator<Player> {
-
-	@Override
-	public int compare(Player o1, Player o2) {
-		return (o1.name).compareTo(o2.name);
 	}
 
 }
