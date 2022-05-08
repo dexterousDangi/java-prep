@@ -25,7 +25,7 @@ public class ArrayList_basic {
 		System.out.println(al); // data can be retrived directly if arraylist contains wrapper class object or
 								// String class objects
 
-		ArrayList all = new ArrayList(); // list containing heterogenous data
+		ArrayList<Object> all = new ArrayList<>(); // list containing heterogenous data
 		all.add(23);
 		all.add("dangi");
 		all.add(23.4);
@@ -33,13 +33,13 @@ public class ArrayList_basic {
 		all.add(false);
 		System.out.println(all); // retreving data directly form arraylist
 
-		ArrayList at = new ArrayList(); // ArrayList storing different objects
+		ArrayList <Object>at = new ArrayList<>(); // ArrayList storing different objects
 		at.add(new Hostal(12, "nomad"));
 		at.add(new Hostal(2, "pritam"));
 		at.add(new Stand(1, "rama"));
 		at.add(new Stand(3, "boy"));
 
-		System.out.println(at);
+		
 		for (Object o : at) {
 			if (o instanceof Hostal) {
 				Hostal h = (Hostal) o;
@@ -51,7 +51,7 @@ public class ArrayList_basic {
 			}
 		}System.out.println();
 
-		ArrayList att = new ArrayList(); // ArrayList storing different objects
+		ArrayList <Object>att = new ArrayList<>(); // ArrayList storing different objects
 		att.add(new Hostal(122, "nomad"));
 		att.add(new Hostal(22, "pritam"));
 		att.add(new Stand(21, "rama"));
@@ -59,13 +59,13 @@ public class ArrayList_basic {
 
 		Iterator<?> itr = att.iterator();
 		while (itr.hasNext()) {
-			Object o = (Object) itr.next();
+			Object o = itr.next();
 			if (o instanceof Hostal) {
 				Hostal hh = (Hostal) o;
 				System.out.print(hh.hname + " " + hh.hno+" ");
 			}
 			if (o instanceof Stand) {
-				Stand ss = (Stand) o;
+				Stand ss = (Stand)o;
 				System.out.print(ss.sname + " " + ss.sno+" ");
 			}
 

@@ -24,7 +24,7 @@ public class Collection_to_arrays {
 		// if the collection type is not generic then for converting collection to arrays we use Object type of array 
 		// which can also hold the heterogenous data too.
 		
-		ArrayList lst = new ArrayList();
+		ArrayList<Object>lst = new ArrayList<>();
 		lst.add(2);
 		lst.add("timo");
 		lst.add(432);
