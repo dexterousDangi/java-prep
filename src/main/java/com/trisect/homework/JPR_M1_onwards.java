@@ -40,20 +40,23 @@ public class JPR_M1_onwards {
 
 		// task4
 		int n4 = 4;
-		String str4="";
+		String str4 = "";
 		for (int i = 1; i <= n4; i++) {
-			
-			if(i<=n4) {
-				str4=str4+"M";
+
+			if (i <= n4) {
+				str4 = str4 + "M";
 				i++;
-			}if(i<=n4) {
-				str4=str4+"N";
+			}
+			if (i <= n4) {
+				str4 = str4 + "N";
 				i++;
-			}if(i<=n4) {
-				str4=str4+"O";
+			}
+			if (i <= n4) {
+				str4 = str4 + "O";
 			}
 
-		}System.out.println(str4);
+		}
+		System.out.println(str4);
 		System.out.println();
 
 		// task5
@@ -195,38 +198,70 @@ public class JPR_M1_onwards {
 		System.out.println();
 
 		// task14
-			int x=21,y=65;
-			int comp=0;
-			if(x>y)
-				comp=y;
-			else
-				comp=x;
-			int min=0; 
-			int hcf=0;
-			for(int i=1;i<=comp;i++) {
-				if(x%i==0 && y%i==0	) {
-					min=i;
-				}if(hcf<min) {
-					hcf=min;
-				}
-			}System.out.println("hcf of " + x + ","+ y+ " is : "+ hcf);
-			System.out.println();
-			
-			
-			//task15
-			int n15=5;
-			String str15="";
-			for(int i=1;i<=n15;i++) {
-				str15=str15+i;
-				for(int j=1;j<=i;j++) {
-					str15=str15+"#";
-				}
-			}System.out.println(str15);
-			System.out.println();
-			
-			// task16
-			
-			
+		int x = 21, y = 65;
+		int comp = 0;
+		if (x > y)
+			comp = y;
+		else
+			comp = x;
+		int min = 0;
+		int hcf = 0;
+		for (int i = 1; i <= comp; i++) {
+			if (x % i == 0 && y % i == 0) {
+				min = i;
+			}
+			if (hcf < min) {
+				hcf = min;
+			}
+		}
+		System.out.println("hcf of " + x + "," + y + " is : " + hcf);
+		System.out.println();
+
+		// task15
+		int n15 = 5;
+		String str15 = "";
+		for (int i = 1; i <= n15; i++) {
+			str15 = str15 + i;
+			for (int j = 1; j <= i; j++) {
+				str15 = str15 + "#";
+			}
+		}
+		System.out.println(str15);
+		System.out.println();
+
+		// task16
+		int n16 = 1456;
+		int rem = 0;
+		int add16 = 0;
+		System.out.println(n16);
+		for (int i = 1; i <= 4; i++) {
+			rem = n16 % 10;
+			add16 = rem + add16;
+			n16 = n16 / 10;
+		}
+		System.out.println("sum of all the digits in no.: " + add16);
+		System.out.println();
+
+		// task17
+		int l = 8, m = 9, n = 4;
+		if ((l + m > n) && (m + n > l) && (n + l > m)) {
+			System.out.println("triangle is possible");
+		} else
+			System.out.println("triangle is not possible");
+		System.out.println();
+
+		// task 18
+		int j = 8, k = 6, h = 10;
+		if ((j + k > h) && (k + h > j) && (j + h > k)) {
+			if (((j * j) + (k * k) == (h * h)) || ((k * k) + (h * h) == (j * j)) || ((j * j) + (h * h) == (k * k))) {
+				System.out.println("triangle is right anle triangle");
+			} else {
+				System.out.println("not a right angle triangle but a normal triangle");
+			}
+		} else {
+			System.out.println("not a right angle triangle");
+		}
+
 	}
 
 }
