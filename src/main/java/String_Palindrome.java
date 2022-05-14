@@ -24,7 +24,7 @@ public class String_Palindrome {
 		System.out.println("again checking if there is some upper case or lower case problem");
 		
 		if(str.equalsIgnoreCase(str1))
-			System.out.println(" is a palindorme and cases are ignored");
+			System.out.println(str+" is a palindorme and cases are ignored");
 		else
 			System.out.println("not a palindrome");
 		// another way to check  the palindrome
@@ -39,7 +39,7 @@ public class String_Palindrome {
 	    	c= string.charAt(i);
 	    	strg =strg +c;
 	    }
-	    System.out.println("againg a new way to reverse a string \n "+ strg);
+	    System.out.println(" again a new way to reverse a string \n "+ strg);
 	if(string.equals(strg)!=false)
 		System.out.println("it is a palindrome");
 	else
