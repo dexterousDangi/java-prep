@@ -14,7 +14,7 @@ public class Selection_sort {
 			int min = i;
 			for (int j = i + 1; j < b.length; j++) {
 
-				if (b[min] > b[j]) {
+				if (b[j]<b[min]) {  
 					min = j;
 				}
 			}
