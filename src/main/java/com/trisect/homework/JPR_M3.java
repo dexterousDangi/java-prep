@@ -163,30 +163,78 @@ public class JPR_M3 {
 		int size13 = 0;
 		for (int i = num13.length - 1; i >= 0; i--) {
 			out13[size13++] = num13[i];
-		}System.out.println(Arrays.toString(num13));
+		}
+		System.out.println(Arrays.toString(num13));
 		System.out.println(Arrays.toString(out13));
 		System.out.println();
-		
+
 		// task14
-		int [] a14= {1,2,3};
-		int [] b14= {10,20,30};
-		int out14 [] = new int [a14.length+b14.length];
-		int sizeA=0;
-		int sizeB=0;
-		for(int i=0; i<out14.length;) {
-			out14[i++]=a14[sizeA++];
-			out14[i++]=b14[sizeB++];		
-			
-		}System.out.println(Arrays.toString(a14));
+		int[] a14 = { 1, 2, 3 };
+		int[] b14 = { 10, 20, 30 };
+		int out14[] = new int[a14.length + b14.length];
+		int sizeA = 0;
+		int sizeB = 0;
+		for (int i = 0; i < out14.length;) {
+			out14[i++] = a14[sizeA++];
+			out14[i++] = b14[sizeB++];
+
+		}
+		System.out.println(Arrays.toString(a14));
 		System.out.println(Arrays.toString(b14));
 		System.out.println(Arrays.toString(out14));
 		System.out.println();
+
+		// task 16
+		int[] num16 = { 1, 6, 7, 8, 9, 2, 4, 5, 6, 7 };
+		String str16 = "";
+		for (int i = 0; i < num16.length; i++) {
+
+			if (i < num16.length - 2) {
+				int size16 = i;
+				if (num16[size16++] % 2 != 0 && num16[size16++] % 2 == 0 && num16[size16] % 2 != 0) {
+					str16 = str16 + num16[++i] + ",";
+				}
+			}
+		}
+		System.out.println(str16);
+		System.out.println();
+
+		// task17 ?
+		int[] num17 = { 10, 20, 20, 30, 32, 32, 32, 34 };
+		int max17 = 0;
+		String str17 = "";
+		for (int i = 0; i < num17.length; i++) {
+			int size17 = i;
+			if (i < num17.length - 1) {
+				if (num17[size17] == num17[++size17]) {
+					max17++;
+					str17 = str17 + num17[i] + ",";
+				}
+			}
+
+		}
+		System.out.println(str17 + " " + max17);
+
+		// task19
+		int a19[] = { 1};
+		int b19[] = { 2,1,2,3,4 };
+		int a=0,b=0;
+		int out19[] = new int[a19.length + b19.length];
+		for (int i = 0; i < out19.length;) {
+				if(a<a19.length) {
+					out19[i++]=a19[a++];
+				}
+				if(b<b19.length) {
+					out19[i++]=b19[b++];
+				}
+		}
+		System.out.println(Arrays.toString(a19));
+		System.out.println(Arrays.toString(b19));
+		System.out.println(Arrays.toString(out19));
+
 	}
 
 }
-
-
-
 
 
 
