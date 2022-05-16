@@ -216,17 +216,17 @@ public class JPR_M3 {
 		System.out.println(str17 + " " + max17);
 
 		// task19
-		int a19[] = { 1};
-		int b19[] = { 2,1,2,3,4 };
-		int a=0,b=0;
+		int a19[] = { 1 };
+		int b19[] = { 2, 1, 2, 3, 4 };
+		int a = 0, b = 0;
 		int out19[] = new int[a19.length + b19.length];
 		for (int i = 0; i < out19.length;) {
-				if(a<a19.length) {
-					out19[i++]=a19[a++];
-				}
-				if(b<b19.length) {
-					out19[i++]=b19[b++];
-				}
+			if (a < a19.length) {
+				out19[i++] = a19[a++];
+			}
+			if (b < b19.length) {
+				out19[i++] = b19[b++];
+			}
 		}
 		System.out.println(Arrays.toString(a19));
 		System.out.println(Arrays.toString(b19));
@@ -235,18 +235,3 @@ public class JPR_M3 {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -69,22 +69,23 @@ public class JPR_M2 {
 			else if (ch != 'C' && ch != 'D')
 				real4 = real4 + ch;
 		}
-		System.out.println(str4 + " string after operation: " + real4);
+		System.out.println(str4 + " <> string after operation: " + real4);
 		System.out.println();
 
 		// task5
-		String str5 = "Hello";
-		String before = "";
+		String str5 = "TRIsECT";
+		String before ="" ;
 		String after = "";
-		int size5 = str5.length() / 2;
-		for (int i = 0; i < str5.length(); i++) {
-			char ch = str5.charAt(i);
-			if (i < size5)
-				after = after + ch;
-			else
-				before = before + ch;
+		if(str5.length()%2==0) {
+			before=str5.substring(0,str5.length()/2);
+			after=str5.substring(str5.length()/2);
+			System.out.println(after+before);
+		}else {
+			 char middle=str5.charAt(str5.length()/2);
+			before=str5.substring(0,str5.length()/2);
+			after=str5.substring((str5.length()/2)+1);
+			System.out.println(after+middle+before);
 		}
-		System.out.println(before + after);
 		System.out.println();
 
 		// task7
