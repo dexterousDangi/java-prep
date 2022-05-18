@@ -12,7 +12,7 @@ public class Insertion_sort_algo {
 			j = i;
 			while (j > 0 && num[j - 1] > temp) {
 				num[j] = num[j - 1];
-				j = j - 1;
+				j --;
 			}
 			num[j] = temp;
 		}
