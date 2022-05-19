@@ -1,32 +1,46 @@
 package com.trisect.homework;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class JPR_M5 {
 
 	public static void main(String[] args) {
 
 		// task 1
-		int n1 = 410;
-		int check = 0;
-		if (n1 == 1) {
-			System.out.println(n1 + " not a prime no.");
-		} else {
-
+		int n1 = 4;
+		boolean check = true;
 			for (int i = 2; i < n1; i++) {
-				if (n1 / i == 0) {
-					check = 1;
+				if( (n1 %i )== 0) {
+					check = false;
+					break;
 				}
 			}
-		}
-		if (check == 0) {
+		
+		if (check) {
 			System.out.println(n1 + " :  is a prime no.");
 		} else {
 			System.out.println(n1 + " not prime no.");
-		}
+		}System.out.println();
 
-		// task 2 ?
-
+		// task 2 
+		int n2=99;
+		List<Integer> list= new ArrayList<Integer>();
+		for(int numberCheck=2;numberCheck<=n2;numberCheck++) {
+			boolean isprime=true;
+			for(int factor=2;factor<=numberCheck/2;factor++) {
+				if(numberCheck%factor==0) {
+					isprime=false;
+					break;
+				}
+			}if(isprime) {
+				list.add(numberCheck);
+			}
+		}System.out.println("Prime no. from 1 to "+n2 );
+		System.out.println(list);
+		System.out.println();
+		
 		// task3
 		int n3 = 3;
 		if (n3 % 5 == 0) {
