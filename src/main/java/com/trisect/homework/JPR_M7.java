@@ -7,8 +7,10 @@ public class JPR_M7 {
 	public void printHi(int n) {
 		if(n<1) {
 			return;
-		}System.out.print(" hola ");
+		}System.out.println(" hola "+n);
 		printHi(n-1);
+		System.out.println();
+		System.out.println(" hola "+n);
 	}
 	
 		int add= 1;
@@ -21,17 +23,56 @@ public class JPR_M7 {
 		fact(n-1);
 		
 	}
+		int sum3=0;
+	public void sumofFirstN(int n) {
+		if(n<1) {
+			return;
+		}
+		sum3=sum3+n;
+		System.out.print(sum3+" >>");
+		sumofFirstN(n-1);
+		
+	}
+	
+	int sum4=0;
+	public int squareSum(int n) {
+		if(n<1) {
+			return sum4;
+		}
+		sum4=sum4+(n*n);
+		return squareSum(n-1);
+	}
+	
+	int out5=1;
+	public int whatpowerof2(int n) {
+		if(n<1) {
+			return out5;
+		}
+		out5=out5*2;
+		return whatpowerof2(n-1);
+	}
 	
 	public static void main(String[] args) {
 		
 		JPR_M7 object= new JPR_M7();
 		
-		// Example no.1
+		// Example no.1 or task 1 and task 2
 		object.printHi(4);
 		System.out.println();
 		
 		//Example no.2
-	 object.fact(5);
+		object.fact(5);
+		System.out.println();
+		
+		//task3
+		object.sumofFirstN(4);
+		System.out.println();
+		
+		//task4
+		System.out.println("sum of square of first "+" number : "+object.squareSum(2));
+		
+		//task5
+		System.out.println("power of 2 : "+object.whatpowerof2(0));
 		
 	}
 
