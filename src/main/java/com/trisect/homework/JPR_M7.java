@@ -46,11 +46,37 @@ public class JPR_M7 {
 	int out5=1;
 	public int whatpowerof2(int n) {
 		if(n<1) {
+			System.out.println();
 			return out5;
+			
 		}
 		out5=out5*2;
 		return whatpowerof2(n-1);
 	}
+	
+	int poweradd=1;
+	public void nthPowerOfM(int m,int n) {
+		if(n<1) {
+			System.out.println(poweradd);
+			System.out.println();
+			return;
+		}poweradd=poweradd*m;
+		nthPowerOfM(m,n-1);
+	}
+	
+	private int countD(String str7) {
+		int len=str7.length();
+		if(len==0) {
+			return 0;
+		}
+		int digit=0;
+		char ch=str7.charAt(0);
+		if(ch=='d') {
+			digit=1;
+		}
+		return digit+countD(str7.substring(1));
+	}
+
 	
 	public static void main(String[] args) {
 		
@@ -69,11 +95,19 @@ public class JPR_M7 {
 		System.out.println();
 		
 		//task4
-		System.out.println("sum of square of first "+" number : "+object.squareSum(2));
+		System.out.println("sum of square of first "+" number : "+object.squareSum(5));
 		
 		//task5
-		System.out.println("power of 2 : "+object.whatpowerof2(0));
+		System.out.println("power of 2 : "+object.whatpowerof2(8));
 		
-	}
+		//task6
+		object.nthPowerOfM(5, 04);
+		
+		//Example7
+		String str7="pardeepddangi";
+		System.out.println(object.countD(str7));
 
+	
+	}
+	
 }
