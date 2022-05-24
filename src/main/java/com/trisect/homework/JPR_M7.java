@@ -77,6 +77,17 @@ public class JPR_M7 {
 		return digit+countD(str7.substring(1));
 	}
 
+	private int countX(String str77) {
+		int len= str77.length();
+		if(len==0) {
+			return 0;
+		}int digit=0; 
+		char ch=str77.charAt(0);
+		if(ch=='x') {
+			digit=1;
+		}		
+		return digit+countX(str77.substring(1));
+	}
 	
 	public static void main(String[] args) {
 		
@@ -105,9 +116,14 @@ public class JPR_M7 {
 		
 		//Example7
 		String str7="pardeepddangi";
-		System.out.println(object.countD(str7));
+		System.out.println("counting 'd' in the string: " +str7+" is : "+object.countD(str7));
 
+		//task7
+		String str77="x1x2x3x";
+		System.out.println("counting 'x' in the string: "+str77+" is : "+ object.countX(str77));
 	
 	}
+
+	
 	
 }
