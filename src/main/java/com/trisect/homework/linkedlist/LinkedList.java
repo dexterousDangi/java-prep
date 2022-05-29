@@ -30,7 +30,7 @@ public class LinkedList {
 		Node current = head; // create a reference with the first element of the list
 		while (current != null) {
 			if (current.data == element) {
-				System.out.println(current.data+" :is present in the list");
+				System.out.println(current.data + " :is present in the list");
 				return true;
 			} else {
 				current = current.next;
@@ -41,42 +41,43 @@ public class LinkedList {
 	}
 
 	public void display() {
-		Node current = head;  // select the first element of the list
-		while(current!=null) {
-			System.out.print(current.data+" -> ");
-			current=current.next;
+		Node current = head; // select the first element of the list
+		while (current != null) {
+			System.out.print(current.data + " -> ");
+			current = current.next;
 		}
-		System.out.println(current);  //will always display null
+		System.out.println(current); // will always display null
 	}
-	
+
 	public void size() {
-		Node current=head;
-		int count=0;
-		if(current==null) {
+		Node current = head;
+		int count = 0;
+		if (current == null) {
 			System.out.println("linkedlist is empty");
 			return;
-		}while(current!=null) {
-			count+=1;
-			current=current.next;
 		}
-			System.out.println(count);
+		while (current != null) {
+			count += 1;
+			current = current.next;
+		}
+		System.out.println(count);
 	}
-	
+
 	public void addAtLast(int data) {
-		Node current=head;
-		Node node= new Node(data);
-		int count=0;
-		if(current!=null) {
-			while(current!=null) {
-				count+=1;
-				current=current.next;
+		Node current = head;
+		Node node = new Node(data);
+
+		if (current != null) {
+			while (current != null) {
+
+				current = current.next;
 			}
-			current=node;
-			System.out.println(count+","+current.data);
-		}else {
-			head=node;
-			
+			current = node;
+			System.out.println(current.data);
+		} else {
+			head = node;
+
 		}
 	}
-	
+
 }
