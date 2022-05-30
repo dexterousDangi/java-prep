@@ -63,17 +63,17 @@ public class LinkedList {
 		System.out.println(count);
 	}
 
+
 	public void addAtLast(int data) {
 		Node current = head;
 		Node node = new Node(data);
-
 		if (current != null) {
-			while (current != null) {
+			while (current.next!= null) {
 
 				current = current.next;
 			}
-			current = node;
-			System.out.println(current.data);
+			current.next= node;
+			System.out.println(current.next.data);
 		} else {
 			head = node;
 
