@@ -57,3 +57,5 @@ public class DeadLockExample {
 	}
 
 }
+
+// to dealt the situation free one of the resources , means decalre synchronized block seprately for one or thread or both
