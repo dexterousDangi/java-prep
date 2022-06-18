@@ -20,6 +20,7 @@ public class ComparableInterfaceUsage {
 		
 	}
 
+	
 }
 
 class Mobile implements Comparable<Mobile> {
