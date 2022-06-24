@@ -13,9 +13,13 @@ public class SynchronizedArrayList {
 	public static void main(String[] args) {
 
 		  // Converting ArrayList to Synchronized ArrayList
-	       List<String> synchronizedarraylist = 
-	       Collections.synchronizedList(new ArrayList<String>());
+//	       List<String> synchronizedarraylist = 
+//	       Collections.synchronizedList(new ArrayList<String>());
 
+		ArrayList<String> list=new ArrayList<String>();
+		List<String> synchronizedarraylist=Collections.synchronizedList(list);
+		
+		
 	       //Adding elements to synchronized ArrayList
 	       synchronizedarraylist.add("Basketball");
 	       synchronizedarraylist.add("Baseball");
