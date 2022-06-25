@@ -1,9 +1,6 @@
-package Interview.question;
+package multithreading_wati_notify_notifyAll;
 
-import multithreading_wati_notify_notifyAll.Message;
-
-public class Notifier implements Runnable {
-
+public class Notifier implements Runnable{
 	private Message msg;
 
 	@Override
@@ -15,6 +12,7 @@ public class Notifier implements Runnable {
 			synchronized (msg) {
 				msg.setMsg(name + " Notifier work done");
 				msg.notify();
+				// msg.notifyAll();
 			}
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -22,3 +20,5 @@ public class Notifier implements Runnable {
 	}
 
 }
+
+
