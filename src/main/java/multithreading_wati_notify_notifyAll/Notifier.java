@@ -2,6 +2,10 @@ package multithreading_wati_notify_notifyAll;
 
 public class Notifier implements Runnable{
 	private Message msg;
+	
+	 public Notifier(Message msg) {
+	        this.msg = msg;
+	    }
 
 	@Override
 	public void run() {
