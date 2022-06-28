@@ -36,24 +36,9 @@ System.out.println("inside swap : "+ " str = "+newstr +" i="+i+" j= "+j);
 		}
 	}
 
-	public static void print(int n) throws InterruptedException { // just an example of recursion
-		if (n < 1) {
-
-			return;
-
-		}
-
-		print(n - 1);
-		System.out.println(n);
-//	Thread.currentThread();
-//	Thread.sleep(1000);
-	}
-
 	public static void main(String[] args) throws InterruptedException {
 
 		String str = "abc";
-		int n = 7;
-		//  print(n);
 		getPermutation(str, 0, str.length());
 
 	}
