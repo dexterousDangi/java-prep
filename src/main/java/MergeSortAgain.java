@@ -34,7 +34,8 @@ public class MergeSortAgain {
 				inputArray[k]=leftHalf[i];
 				k++;
 				i++;
-			}else {
+			}else //(leftHalf[i]> rightHalf[j]
+			{
 				inputArray[k]=rightHalf[j];
 				k++;
 				j++;
