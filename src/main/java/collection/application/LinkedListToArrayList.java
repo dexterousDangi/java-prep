@@ -14,7 +14,7 @@ public class LinkedListToArrayList {
 		    linkedlist.add("Apple");
 		    linkedlist.add("Orange");
 		    // Converting LinkedList to ArrayList
-		    List<String> list = new ArrayList(linkedlist);
+		    List<String> list = new ArrayList<>(linkedlist);
 
 		    for (String s : list) {
 		      System.out.println(s);
