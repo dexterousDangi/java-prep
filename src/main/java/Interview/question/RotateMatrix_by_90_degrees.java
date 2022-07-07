@@ -12,7 +12,8 @@ public class RotateMatrix_by_90_degrees {
 	        System.out.print("Enter  "+ no*no+" Element Array : ");
 	        
 	        for(int i = 0; i<no; i++){
-	            for(int j = 0; j<no; j++){
+	            for(int j = 0; j<no; j++)
+	            {
 	                a[i][j] = sc.nextInt();
 	            }
 	        }
