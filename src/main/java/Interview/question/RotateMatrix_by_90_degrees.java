@@ -56,5 +56,6 @@ public class RotateMatrix_by_90_degrees {
 	            }
 	            System.out.println();
 	        }
-	    }
+	        sc.close();
+	        }
 }
