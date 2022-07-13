@@ -20,7 +20,7 @@ public class Main {
 //			 System.out.println("+"+a);
 		
 		 Class classSuper= c.getSuperclass();   // will give us the parent class of dog class
-		// System.out.println(classSuper.getName());  
+	        System.out.println(classSuper.getName());  
 		 
 		int classModifier= c.getModifiers();
 		System.out.println(Modifier.isPublic(classModifier)); //  will give the true if modifier of the class is public
