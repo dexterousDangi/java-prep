@@ -10,11 +10,12 @@ public class StudentDaoImpl implements StudentDao{
 
 	   public StudentDaoImpl(){
 	      students = new ArrayList<Student>();
-	      Student student1 = new Student("Robert",0);
-	      Student student2 = new Student("John",1);
+	      Student student1 = new Student("Robert",1);
+	      Student student2 = new Student("John",2);
 	      students.add(student1);
 	      students.add(student2);		
 	   }
+	   
 
 	@Override
 	public List<Student> getAllStudents() {
