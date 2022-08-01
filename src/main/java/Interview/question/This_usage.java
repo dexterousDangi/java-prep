@@ -1,11 +1,11 @@
 package Interview.question;
 
 public class This_usage {
-	{  
+	  
 	    int id;
 	    int age;   
 	    String name;
-	    String address;  
+	    String address="";  
 	    public This_usage (int age)  
 	    {  
 	        this.age = age;  
